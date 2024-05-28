@@ -1,0 +1,46 @@
++-------------------------------------+
+|          ReprodutorMusical          |
+|-------------------------------------|
+| - musica: boolean                   |
+|-------------------------------------|
+| + ReprodutorMusical()               |
+| + tocarMusica(): boolean            |
+| + pausarMusica(): boolean           |
+| + exibirInfo(): void {abstract}      |
++-------------------------------------+
+                  ^
+                  |
+  +---------------+------------------+
+  |                                   |
++-------------------------------------+
+|             MeuReprodutor           |
+|-------------------------------------|
+|                                     |
+|-------------------------------------|
+| + exibirInfo(): void                |
++-------------------------------------+
+
++-------------------------------------+
+|                Iphone               |
+|-------------------------------------|
+| - reprodutor: ReprodutorMusical     |
+|-------------------------------------|
+| + Iphone()                          |
+| + Iphone(reprodutor: ReprodutorMusical)|
+| + setReprodutor(reprodutor: ReprodutorMusical)|
+| + tocarSom(): void                  |
+| + pausarSom(): void                 |
+| + ligar(numero: String): void       |
+| + selecionarFaixa(faixa: String): void |
+| + atender(numero: String): void     |
+| + exibirPagina(url: String): void   |
+| + adicionarNovaAba(url: String): void|
+| + atualizarPagina(url: String): void|
++-------------------------------------+
+
++-------------------------------------+
+|              IphoneMain             |
+|-------------------------------------|
+|-------------------------------------|
+| + main(args: String[]): void        |
++-------------------------------------+
